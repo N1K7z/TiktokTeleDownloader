@@ -3,6 +3,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const axios = require('axios');
 const fs = require('fs');
 
+// TARUH BOT TOKEN KAMU DI SINI YA
 const bot = new TelegramBot(process.env.BOT_TOKEN, { polling: true });
 const cooldown = new Map();
 const statsPath = './stats.json'; // Path untuk file statistik
